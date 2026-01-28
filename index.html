@@ -1,160 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vastrasaaz | Premium Ethnic Wear</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vastrasaaz</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-    color: #333;
-}
-header {
-    background: rgba(0,0,0,0.5);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-.hero {
-    position: relative;
-    height: 90vh;
-    background: url('https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-}
+    body {
+      background: #ffffff;
+    }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: white;
-    padding: 20px;
-}
+    header {
+      background: #111;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
-}
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
 
-.btn {
-    background: #ff2e63;
-    color: white;
-    padding: 14px 32px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-}
+    .hero {
+      height: 100vh;
+      background: url('IMG-20260128-WA0001.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
 
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
+    .hero-content {
+      background: rgba(0,0,0,0.5);
+      padding: 30px;
+      border-radius: 10px;
+    }
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
 
-.card {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
 
-.card img {
-    width: 100%;
-    border-radius: 8px;
-}
+    .btn {
+      background: #ff2e63;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
 
-.card h3 {
-    margin: 10px 0 5px;
-}
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.price {
-    color: #ff2e63;
-    font-weight: 600;
-}
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-</style>
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>VASTRASAaz</header>
+  <header>
+    <h1>VASTRASAAZ</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-<section class="hero">
+  <section class="hero">
     <div class="hero-content">
-        <h1>Elegance in Every Thread</h1>
-        <p>Discover premium ethnic & trendy fashion made for modern India</p>
-        <a href="#shop" class="btn">Shop Now</a>
+      <h2>Elegance in Every Thread</h2>
+      <p>Discover premium ethnic & trendy fashion made for modern India</p>
+      <a href="#" class="btn">Shop Now</a>
     </div>
-</section>
+  </section>
 
-<section class="section" id="shop">
-    <h2>Our Collection</h2>
-    <div class="products">
+  <section class="section">
+    <h3>Our Collection</h3>
+    <p>Trendy | Ethnic | Premium Quality</p>
+  </section>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=600&q=80">
-            <h3>Designer Kurti</h3>
-            <div class="price">₹1,499</div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1612423284934-2850b1a2d6be?auto=format&fit=crop&w=600&q=80">
-            <h3>Elegant Saree</h3>
-            <div class="price">₹2,299</div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1593032465171-8f0c6d7d3fcb?auto=format&fit=crop&w=600&q=80">
-            <h3>Festive Lehenga</h3>
-            <div class="price">₹3,999</div>
-        </div>
-
-    </div>
-</section>
-
-<footer>
-© 2026 Vastrasaaz | Ethnic Wear for Every Occasion
-</footer>
+  <footer>
+    © 2026 Vastrasaaz | Made with ❤ in India
+  </footer>
 
 </body>
 </html>
